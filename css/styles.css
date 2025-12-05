@@ -1,0 +1,123 @@
+:root {
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+  --white: #ffffff;
+  --text-preset-1: 2.4rem;
+  --text-preset-2: 1.6rem;
+  --text-preset-3: 1.4rem;
+}
+
+@font-face {
+  font-family: 'Figtree-ExtraBold';
+  src: url('../assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Figtree-Medium';
+  src: url('../assets/fonts/static/Figtree-Medium.ttf');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.blog-preview-card {
+  width: 32.7rem;
+  height: 50.1rem;
+  border-radius: 2rem;
+  background-color: var(--white);
+  border: 0.1rem solid;
+  box-shadow: 0.8rem 0.8rem 0 0 #000000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.blog-preview-card .card-blog-image {
+  margin: 2.4rem 2.4rem 0;
+  border-radius: 1rem;
+  width: 27.9rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.blog-preview-card section {
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.blog-preview-card .tag {
+  display: flex;
+}
+
+.blog-preview-card span {
+  background-color: var(--yellow);
+  color: var(--gray-950);
+  border-radius: 0.4rem;
+  font-family: 'Figtree-ExtraBold';
+  font-size: 1.2rem;
+  padding: 0.4rem 1.2rem;
+  line-height: 150%;
+}
+
+.blog-preview-card p {
+  font-family: 'Figtree-Medium';
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 150%;
+}
+
+.blog-preview-card h1 {
+  font-family: 'Figtree-ExtraBold';
+  margin: 0;
+  line-height: 150%;
+}
+
+.blog-preview-card .card-description {
+  font-size: 1.4rem;
+  color: var(--gray-500);
+  line-height: 150%;
+}
+
+.blog-preview-card .card-author {
+  display: flex;
+  padding: 0 2.4rem;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: var(--text-preset-3);
+  font-weight: bold;
+}
+
+.blog-preview-card .user-picture {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
